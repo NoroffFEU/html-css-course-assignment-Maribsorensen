@@ -4,16 +4,462 @@
 /* These are marked with an underscore: */
 @import url("./_variables.css");
 /* Feel free to add as many of these imports as you need */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
 
-body {
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
+/*-----header-----*/
+header {
+  width: 100%;
+  background-color: #23312B;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 6.5rem;
+  position: relative;
+}
+header p {
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.1rem;
+}
+.header-nav ul {
+  text-align: center;
+  padding: 0;
+}
+.hamburger-icon {
+  color: #FFF;
+  font-size: 2rem;
+}
+.header-nav, #checkbox-menu {
+  display: none;
+}
+#checkbox-menu:checked ~ .header-nav {
+  display: inline-block;
+}
+.header-nav li {
+  display: inline-block;
+}
+.header-nav {
+  position: absolute;
+  background-color: #23312B;
+  left: 4rem;
+}
+nav a {
+  text-decoration: none;
+  color: #FFF;
+  padding: 0.8rem 1.2rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.current {
+  text-decoration: underline;
+}
+.cart-icon {
+  width: 45%;
+  height: auto;
+}
+@media (min-width: 701px) {
+  .header-nav {
+    display: block;
+    position: static;
+  }
+  .hamburger-icon {
+    display: none;
+  }
+  .header-nav li {
+    display: inline-block;
+  }
 }
 
-.centered {
+
+
+/*-----main-----*/
+section {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-bottom: 5rem;
+}
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: calc(100% * (100 / 280));
+}
+.banner-forest {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+}
+.rd-logo {
+  width: 25%;
+  height: auto;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+.main-button {
+  background-color: #312329;
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  border-style: solid;
+  border-color: #FFF;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+.seperator-box {
+  width: 100%;
+  background-color: #23312B;
+  height: 4.5rem;
+  position: relative;
+  margin-bottom: 5rem;
+}
+.shop-box-1 {
+  position: relative;
+}
+.shop-image-1 {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+.shop-text-1 {
+  position: absolute;
+  bottom: 5%;
+  left: 3%;
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5rem;
+}
+.shop-text-1-2 {
+  position: absolute;
+  bottom: 0;
+  left: 3%;
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.875rem;
+}
+.content-box-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.625rem;
+}
+.shop-box-2 {
+  flex-basis: 850px;
+  position: relative;
+}
+.shop-image-2 {
+  max-width: 100%;
+  height: auto;
+
+}
+.shop-text-2 {
+  position: absolute;
+  bottom: 0;
+  left: 3%;
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.875rem;
+}
+.shop-text-3 {
+  position: absolute;
+  bottom: 8%;
+  left: 3%;
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.25rem;
+}
+.sustainability-information {
+  background-color: #23312B;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: #FFF;
+  margin-bottom: 5rem;
+}
+.sustainability-information p, h2 {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+.sustainability-information p {
+  font-family: 'Abel', sans-serif;
+  font-size: 1.5rem;
+}
+.sustainability-information h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+@media (max-width: 701px) {
+  header p {
+    font-size: 2rem;
+  }
+  section {
+    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-bottom: 2rem;
+  }
+  .seperator-box {
+    margin-bottom: 2rem;
+  }
+  .shop-text-1 {
+    font-size: 2rem;
+  }
+  .shop-text-1-2 {
+    font-size: 1.2rem;
+  }
+  .shop-text-2 {
+    font-size: 1.2rem;
+  }
+  .shop-text-3 {
+    font-size: 1rem;
+  }
+  .sustainability-information p, h2 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .sustainability-information h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    text-align: center;
+  }
+}
+
+/*-----shop-----*/
+h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+}
+.shop-page-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.625rem;
+}
+.jacket-page-link {
+  text-decoration: none;
+  color: #000;
+}
+.jacket-page-link:hover {
+  text-decoration: underline;
+}
+.shop-page-boxes {
+  flex-basis: 450px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.shop-jacket-img {
+  width: 100%;
+  height: auto;
+}
+
+.jacket-info-1 {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #000;
+}
+.jacket-info-2 {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-weight: 200;
+  font-size: 1.2rem;
+  color: #000;
+}
+@media (max-width: 701px) {
+  .shop-page-boxes {
+    flex-basis: 300px;
+  }
+  .shop-page-content {
+    justify-content: center;
+  }
+}
+
+
+/*-----about-----*/
+
+.about-group-img {
+  max-width: 50%;
+  height: auto;
+  float: left;
+  padding-bottom: 2rem;
+  padding-right: 2rem;
+}
+.about-info-1 {
+  max-width: 50%;
+  font-family: 'Abel', sans-serif;
+  font-size: 1.2rem;
+  float: right;
+}
+.about-info-2 {
+  max-width: 50%;
+  font-family: 'Abel', sans-serif;
+  font-size: 1.2rem;
+}
+.choose-title {
+  clear: both;
+}
+@media (max-width: 701px) {
+  .about-group-img {
+    float: none;
+    padding: 0;
+    max-width: 100%;
+
+  }
+  .about-info-1, .about-info-2 {
+    float: none;
+    margin: 0 auto;
+    max-width: 40ch;
+    padding-bottom: 1rem;
+  }
+}
+
+/*-----contact-----*/
+.contact-info-1 {
+  max-width: 50%;
+  font-family: 'Abel', sans-serif;
+  font-size: 1.2rem;
+}
+
+.form-box {
+  max-width: 30rem;
+  min-height: 38rem;
+  background-color: #23312b;
+  border-radius: 1rem;
+  position: relative;
+
+}
+form {
+  font-family: 'Oswald', sans-serif;
+  color: #FFF;
+  font-weight: 300;
+  font-size: 1.3rem;
+  padding: 2rem 2rem;
+}
+.labels {
+  display: flex;
+  padding-top: 0.8rem;
+}
+.input-box {
   display: flex;
   justify-content: center;
+  width: 100%;
+}
+.form-button {
+  background-color: #312329;
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  border-style: solid;
+  border-color: #FFF;
+  padding: 0.5rem 1.8rem;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+@media (max-width: 701px) {
+  .contact-info-1 {
+    margin: 0 auto;
+    max-width: 40ch;
+    padding-bottom: 1rem;
+  }
+  .form-box {
+    max-width: 100%;
+    border-radius: 0;
+  }
+}
+
+/*-----footer-----*/
+footer { 
+  width: 100%;
+  background-color: #23312B;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  padding: 1rem;
+}
+.footer-nav li {
+  display: block;
+}
+.footer-nav a {
+  text-decoration: none;
+}
+
+.footer-logo-section {
+  position: relative;
+}
+.footer-logo {
+  mix-blend-mode: soft-light;
+  width: 50%;
+  height: auto;
+  transform: translate(50%);
+  margin-top: 0.5rem;
+}
+.footer-follow {
+  font-family: 'Oswald', sans-serif;
+  color: #FFF;
+  font-weight: 300;
+  font-size: 1.5rem;
+  width: 50%;
+  transform: translate(68%);
+  margin: 0;
+}
+.footer-socials-box {
+  width: 50%;
+  transform: translate(65%);
+}
+.footer-socials {
+  width: 20%;
+  height: auto;
+}
+
+.club-button {
+  background-color: #312329;
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  border-style: solid;
+  border-color: #FFF;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+  cursor: pointer;
+}
+@media (max-width: 701px) {
+  .footer-nav ul {
+    padding-left: 0;
+  }
+  footer {
+    flex-wrap: wrap;
+  }
 }
