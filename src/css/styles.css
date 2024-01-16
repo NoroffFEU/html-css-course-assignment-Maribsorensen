@@ -359,15 +359,12 @@ h3 {
   background-color: #23312b;
   border-radius: 1rem;
   position: relative;
-
 }
-form {
+.contact-form {
   font-family: 'Oswald', sans-serif;
   color: #FFF;
   font-weight: 300;
   font-size: 1.3rem;
-}
-.contact-form {
   padding: 2rem 2rem;
 }
 .labels {
@@ -429,6 +426,12 @@ footer {
 }
 .footer-nav ul {
   padding-left: 0;
+}
+.footer-form{
+  font-family: 'Oswald', sans-serif;
+  color: #FFF;
+  font-weight: 300;
+  font-size: 1.3rem;
 }
 .footer-form-attributes {
   margin: 0.2rem;
