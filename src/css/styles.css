@@ -366,6 +366,8 @@ form {
   color: #FFF;
   font-weight: 300;
   font-size: 1.3rem;
+}
+.contact-form {
   padding: 2rem 2rem;
 }
 .labels {
@@ -428,6 +430,10 @@ footer {
 .footer-nav ul {
   padding-left: 0;
 }
+.footer-form-attributes {
+  margin: 0.2rem;
+}
+
 .footer-logo {
   mix-blend-mode: soft-light;
   width: 50%;
@@ -472,5 +478,8 @@ footer {
 @media (max-width: 701px) {
   footer {
     flex-wrap: wrap;
+  }
+  .footer-form {
+    padding-left: 1.2rem;
   }
 }
