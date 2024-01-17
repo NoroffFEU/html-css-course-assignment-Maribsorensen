@@ -87,7 +87,7 @@ nav a:hover {
 }
 
 
-/*-----main-----*/
+/*-----all-----*/
 h1, h2, h3, h4, h5, h6, form, button {
   font-family: 'Oswald', sans-serif;
 }
@@ -107,6 +107,9 @@ section {
   margin-right: 5rem;
   margin-bottom: 5rem;
 }
+
+
+/*-----main-----*/
 h4, h5 {
   letter-spacing: 0.1rem;
   margin: 1rem;
@@ -184,7 +187,6 @@ h4, h5 {
 .shop-image-2 {
   max-width: 100%;
   height: auto;
-
 }
 .shop-text-2 {
   position: absolute;
@@ -219,7 +221,6 @@ h4, h5 {
   font-size: 2.5rem;
   font-weight: 400;
 }
-
 @media (max-width: 701px) {
   header p {
     font-size: 2rem;
@@ -255,6 +256,7 @@ h4, h5 {
     text-align: center;
   }
 }
+
 
 /*-----shop-----*/
 h3 {
@@ -307,7 +309,6 @@ h3 {
 
 
 /*-----about-----*/
-
 .about-group-img {
   max-width: 50%;
   height: auto;
@@ -345,12 +346,12 @@ h3 {
   }
 }
 
+
 /*-----contact-----*/
 .contact-info-1 {
   max-width: 50%;
   font-size: 1.2rem;
 }
-
 .form-box {
   max-width: 30rem;
   min-height: 38rem;
@@ -397,6 +398,7 @@ input {
   }
 }
 
+
 /*-----temporary page-----*/
 .temp-info {
   font-size: 1.5rem;
@@ -409,6 +411,7 @@ input {
   }
 }
 
+
 /*-----footer-----*/
 footer { 
   width: 100%;
@@ -418,7 +421,6 @@ footer {
   align-items: center;
   padding: 1rem;
 }
-
 .footer-nav a {
   text-decoration: none;
   display: flex;
@@ -433,7 +435,6 @@ footer {
 .footer-nav a:hover {
   text-decoration: underline;
 }
-
 .footer-form{
   font-family: 'Oswald', sans-serif;
   color: #FFF;
@@ -443,7 +444,6 @@ footer {
 .footer-form-attributes {
   margin: 0.2rem;
 }
-
 .footer-logo {
   mix-blend-mode: soft-light;
   width: 50%;
@@ -477,7 +477,6 @@ footer {
   padding-left: 0.9rem;
   padding-right: 0.9rem;
 }
-
 @media (max-width: 840px) {
   footer {
     flex-wrap: wrap;
