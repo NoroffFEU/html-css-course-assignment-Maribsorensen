@@ -77,12 +77,12 @@ nav a:hover {
   .hamburger-icon {
     display: none;
   }
-  .header-nav li {
-    display: inline-block;
-  }
-
 }
-
+@media (max-width: 701px) {
+  nav a {
+    padding: 0.2rem 0.6rem;
+  }
+}
 
 
 /*-----main-----*/
@@ -120,14 +120,11 @@ h4, h5 {
   background-color: #312329;
   color: #FFF;
   font-family: 'Oswald', sans-serif;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 400;
   border-style: solid;
   border-color: #FFF;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
-  padding-left: 0.9rem;
-  padding-right: 0.9rem;
+  padding: 0.4rem 1rem;
   cursor: pointer;
   display: block;
   position: absolute;
@@ -331,7 +328,7 @@ h3 {
 .choose-title {
   clear: both;
 }
-@media (max-width: 701px) {
+@media (max-width: 880px) {
   .about-group-img {
     float: none;
     padding: 0;
@@ -342,7 +339,10 @@ h3 {
     float: none;
     margin: 0 auto;
     max-width: 40ch;
-    padding-bottom: 1rem;
+    padding: 0rem 0.5rem 1rem 0.5rem;
+  }
+  .about-header, .choose-title {
+    text-align: center;
   }
 }
 
@@ -392,11 +392,14 @@ h3 {
   left: 50%;
   transform: translate(-50%, -50%)
 }
+input {
+  font-size: 1.2rem;
+}
 @media (max-width: 701px) {
   .contact-info-1 {
     margin: 0 auto;
     max-width: 40ch;
-    padding-bottom: 1rem;
+    padding: 0rem 0.5rem 1rem 0.5rem;
   }
   .form-box {
     max-width: 100%;
@@ -404,11 +407,19 @@ h3 {
   }
 }
 
-
+/*-----temporary page-----*/
 .temp-info {
   font-family: 'Abel', sans-serif;
   font-size: 1.5rem;
 }
+@media (max-width: 701px) {
+  .temp-info {
+    margin: 0 auto;
+    max-width: 40ch;
+    padding: 0rem 0.5rem 1rem 0.5rem;
+  }
+}
+
 /*-----footer-----*/
 footer { 
   width: 100%;
@@ -418,20 +429,24 @@ footer {
   align-items: center;
   padding: 1rem;
 }
-.footer-nav li {
-  display: block;
-}
+
 .footer-nav a {
   text-decoration: none;
-}
-.footer-nav ul {
+  display: flex;
+  flex-direction: column;
   padding-left: 0;
+  margin-left: 1rem;
+  font-family: 'Oswald', sans-serif;
+  color: #FFF;
+  font-weight: 300;
+  font-size: 1.5rem;
 }
+
 .footer-form{
   font-family: 'Oswald', sans-serif;
   color: #FFF;
   font-weight: 300;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .footer-form-attributes {
   margin: 0.2rem;
@@ -478,11 +493,24 @@ footer {
   padding-right: 0.9rem;
   cursor: pointer;
 }
-@media (max-width: 701px) {
+@media (max-width: 840px) {
   footer {
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-nav {
+    margin-bottom: 2rem;
+  }
+  .footer-nav a {
+    margin-left: 0;
+    text-align: center;
   }
   .footer-form {
-    padding-left: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem;
   }
 }
