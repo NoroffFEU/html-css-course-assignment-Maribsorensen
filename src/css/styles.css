@@ -72,7 +72,7 @@ nav a:hover {
   width: 45%;
   height: auto;
 }
-@media (min-width: 701px) {
+@media (min-width: 768px) {
   .header-nav {
     display: block;
     position: static;
@@ -81,7 +81,7 @@ nav a:hover {
     display: none;
   }
 }
-@media (max-width: 701px) {
+@media (max-width: 768px) {
   nav a {
     padding: 0.2rem 0.6rem;
   }
@@ -222,7 +222,7 @@ section {
   font-size: 2.5rem;
   font-weight: 400;
 }
-@media (max-width: 701px) {
+@media (max-width: 768px) {
   header p {
     font-size: 2rem;
   }
@@ -313,9 +313,85 @@ h1 {
 
 
 /*-----FridaRunner-----*/
-
-
-    
+.gender, .price {
+  margin: 0;
+}
+.gender {
+  color: #23312B;
+}
+.price {
+  font-weight: 300;
+}
+.fridarunner-box {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.fridarunner-img-box {
+  width: 30%;
+}
+.fridarunner-img {
+  width: 100%;
+}
+.fridarunner-information-box {
+  width: 60%;
+}
+.fridarunner-information {
+  font-size: 1.5rem;
+  margin: 0 0 2rem 0;
+}
+.size-range {
+  transform: scale(1.8);
+}
+input[type='radio']:checked {
+  accent-color: #000;
+}
+.size-name {
+  margin-right: 1rem;
+}
+.add-button {
+  width: 100%;
+  font-size: 1.8rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+.material-information {
+  font-size: 1.5rem;
+}
+.other-img-box {
+  display: flex;
+  justify-content: space-between;
+}
+.other-img-1 {
+  width: 30%;
+}
+.other-img-2 {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .gender, .price, .fr-headers {
+    text-align: center;
+  }
+  .fridarunner-img-box {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .fridarunner-information-box {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .fridarunner-box {
+    display: block;
+  }
+  .fridarunner-information, .material-information {
+    margin: 1 auto;
+    padding: 0 0.5rem;
+  }
+  .size-add-form {
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
 /*-----about-----*/
 .about-group-img {
   max-width: 50%;
@@ -336,7 +412,7 @@ h1 {
 .choose-title {
   clear: both;
 }
-@media (max-width: 880px) {
+@media (max-width: 768px) {
   .about-group-img {
     float: none;
     padding: 0;
@@ -394,7 +470,7 @@ h1 {
 input {
   font-size: 1.2rem;
 }
-@media (max-width: 701px) {
+@media (max-width: 768px) {
   .contact-info-1 {
     margin: 0 auto;
     max-width: 40ch;
@@ -411,7 +487,7 @@ input {
 .temp-info {
   font-size: 1.5rem;
 }
-@media (max-width: 701px) {
+@media (max-width: 768px) {
   .temp-info {
     margin: 0 auto;
     max-width: 40ch;
