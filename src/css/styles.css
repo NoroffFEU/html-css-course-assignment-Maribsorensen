@@ -178,11 +178,11 @@ section {
 .content-box-images {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 0.625rem;
 }
 .shop-box-2 {
-  flex-basis: 850px;
+  flex-basis: 750px;
   position: relative;
 }
 .shop-image-2 {
