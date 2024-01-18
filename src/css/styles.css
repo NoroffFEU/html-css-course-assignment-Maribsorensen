@@ -21,7 +21,8 @@ header {
   height: 6.5rem;
   position: relative;
 }
-header h1 {
+header .head-logo {
+  font-family: 'Oswald', sans-serif;
   color: #FFF;
   font-size: 2.5rem;
   font-weight: 400;
@@ -110,7 +111,7 @@ section {
 
 
 /*-----main-----*/
-h4, h5 {
+.shop-text-1, .shop-text-1-2, .shop-text-2, .shop-text-3 {
   letter-spacing: 0.1rem;
   margin: 1rem;
 }
@@ -210,14 +211,14 @@ h4, h5 {
   color: #FFF;
   margin-bottom: 5rem;
 }
-.sustainability-information p, h2 {
+.sustainability-information p, .sustainability-header {
   margin-left: 5rem;
   margin-right: 5rem;
 }
 .sustainability-information p {
   font-size: 1.5rem;
 }
-.sustainability-information h2 {
+.sustainability-information .sustainability-header {
   font-size: 2.5rem;
   font-weight: 400;
 }
@@ -245,21 +246,24 @@ h4, h5 {
   .shop-text-3 {
     font-size: 1rem;
   }
-  .sustainability-information p, h2 {
+  .sustainability-information p, .sustainability-header {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
   }
-  .sustainability-information h2 {
+  .sustainability-information .sustainability-header {
     font-size: 2rem;
   }
-  h3 {
+  h1 {
     text-align: center;
+  }
+  .sustainability-header {
+    text-align: left;
   }
 }
 
 
 /*-----shop-----*/
-h3 {
+h1 {
   font-size: 2rem;
 }
 .shop-page-content {
@@ -308,6 +312,10 @@ h3 {
 }
 
 
+/*-----FridaRunner-----*/
+
+
+    
 /*-----about-----*/
 .about-group-img {
   max-width: 50%;
@@ -452,6 +460,7 @@ footer {
   margin-top: 0.5rem;
 }
 .footer-follow {
+  font-family: 'Oswald', sans-serif;
   color: #FFF;
   font-weight: 300;
   font-size: 1.5rem;
