@@ -346,6 +346,9 @@ h1 {
 input[type='radio']:checked {
   accent-color: #000;
 }
+fieldset {
+  border: none;
+}
 .size-name {
   margin-right: 1rem;
 }
