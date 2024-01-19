@@ -375,6 +375,9 @@ fieldset {
 .other-img-2 {
   width: 100%;
 }
+legend {
+  padding: 0;
+}
 @media (max-width: 768px) {
   .gender, .price, .fr-headers {
     text-align: center;
