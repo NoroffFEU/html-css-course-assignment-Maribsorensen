@@ -1,9 +1,4 @@
-/* Use import to split up your CSS into manageable chunks */
 @import url("./reset.css");
-/* Files that are only needed to be imported are called partials */
-/* These are marked with an underscore: */
-@import url("./_variables.css");
-/* Feel free to add as many of these imports as you need */
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
 
@@ -108,7 +103,16 @@ section {
   margin-right: 5rem;
   margin-bottom: 5rem;
 }
-
+.general-info {
+  font-size: 1.5rem;
+  max-width: 60ch;
+}
+@media (max-width: 768px) {
+  .general-info {
+    margin: 0 auto;
+    padding: 0rem 0.5rem 1rem 0.5rem;
+  }
+}
 
 /*-----main-----*/
 .shop-text-1, .shop-text-1-2, .shop-text-2, .shop-text-3 {
@@ -395,6 +399,97 @@ fieldset {
     text-align: center;
   }
 }
+
+
+/*-----cart-----*/
+.cart-border, .cart-border-subtotal {
+  display: flex;
+  justify-content: space-between;
+  border: solid #000;
+  border-width: 0.15rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+.cart-jacket-box, .cart-info, .cart-qty, .cart-price, .cart-remove {
+  width: 15%;
+}
+.cart-content, .cart-qty, .cart-price, .cart-remove {
+  margin: 1.5rem 0 0 0;
+}
+.cart-content {
+  font-weight: 300;
+}
+.cart-price {
+  font-size: 1.2rem;
+}
+.cart-form-content {
+  margin-right: 1rem;
+}
+.cart-qty select {
+  padding: 0.2rem 1rem;
+  border: none;
+  background-color: #312329;
+  color: #FFF;
+  border-radius: 0.4rem;
+}
+.subtotal, .subtotal-price {
+  font-size: 1.5rem;
+  margin: 1rem 2rem;
+  font-weight: 300;
+}
+.cart-form-box {
+  width: 100%;
+  background-color: #23312b;
+  border-radius: 1rem;
+}
+.cart-form {
+  color: #FFF;
+  font-weight: 300;
+  font-size: 1.3rem;
+  padding: 2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.cart-form-container {
+  width: 40%;
+}
+
+@media (max-width: 768px) {
+  .cart-border, .cart-border-subtotal {
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin: 0.5rem;
+  }
+  .cart-jacket-box, .cart-info, .cart-qty, .cart-price, .cart-remove {
+    width: 100%;
+  }
+  .cart-form-container {
+    width: 100%;
+  }
+  .cart-form-content {
+    margin-right: 0;
+  }
+  .cart-form-box {
+    max-width: 100%;
+    border-radius: 0;
+  }
+  .cart-form {
+   display: block;
+   padding: 2rem 4rem;
+  }
+}
+
+
+/*-----checkout-----*/
+.checkout-img {
+  width: 100%;
+  height: auto;
+}
+
+
 /*-----about-----*/
 .about-group-img {
   max-width: 50%;
@@ -439,12 +534,11 @@ fieldset {
   max-width: 50%;
   font-size: 1.2rem;
 }
-.form-box {
+.contact-form-box {
   max-width: 30rem;
   min-height: 38rem;
   background-color: #23312b;
   border-radius: 1rem;
-  position: relative;
 }
 .contact-form {
   color: #FFF;
@@ -461,14 +555,14 @@ fieldset {
   justify-content: center;
   width: 100%;
 }
+.form-button-box {
+  display: flex;
+  justify-content: center;
+}
 .form-button {
   font-size: 1rem;
   padding: 0.5rem 1.8rem;
-  display: block;
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%)
+  margin: 3rem;
 }
 input {
   font-size: 1.2rem;
@@ -479,22 +573,9 @@ input {
     max-width: 40ch;
     padding: 0rem 0.5rem 1rem 0.5rem;
   }
-  .form-box {
+  .contact-form-box {
     max-width: 100%;
     border-radius: 0;
-  }
-}
-
-
-/*-----temporary page-----*/
-.temp-info {
-  font-size: 1.5rem;
-}
-@media (max-width: 768px) {
-  .temp-info {
-    margin: 0 auto;
-    max-width: 40ch;
-    padding: 0rem 0.5rem 1rem 0.5rem;
   }
 }
 
