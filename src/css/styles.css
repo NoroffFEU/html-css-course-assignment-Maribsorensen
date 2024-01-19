@@ -1,13 +1,11 @@
 @import url("./reset.css");
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap");
 
 /*-----header-----*/
 header {
   width: 100%;
-  background-color: #23312B;
+  background-color: #23312b;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,8 +15,8 @@ header {
   position: relative;
 }
 header .head-logo {
-  font-family: 'Oswald', sans-serif;
-  color: #FFF;
+  font-family: "Oswald", sans-serif;
+  color: #fff;
   font-size: 2.5rem;
   font-weight: 400;
   line-height: normal;
@@ -32,10 +30,11 @@ header .head-logo {
   padding: 0;
 }
 .hamburger-icon {
-  color: #FFF;
+  color: #fff;
   font-size: 2rem;
 }
-.header-nav, #checkbox-menu {
+.header-nav,
+#checkbox-menu {
   display: none;
 }
 #checkbox-menu:checked ~ .header-nav {
@@ -46,14 +45,14 @@ header .head-logo {
 }
 .header-nav {
   position: absolute;
-  background-color: #23312B;
+  background-color: #23312b;
   left: 3.55rem;
 }
 nav a {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   padding: 0.8rem 1.2rem;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
 }
@@ -82,20 +81,26 @@ nav a:hover {
   }
 }
 
-
 /*-----all-----*/
-h1, h2, h3, h4, h5, h6, form, button {
-  font-family: 'Oswald', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+button {
+  font-family: "Oswald", sans-serif;
 }
 p {
-  font-family: 'Abel', sans-serif;
+  font-family: "Abel", sans-serif;
 }
 button {
   background-color: #312329;
-  color: #FFF;
+  color: #fff;
   font-weight: 400;
   border-style: solid;
-  border-color: #FFF;
+  border-color: #fff;
   cursor: pointer;
 }
 section {
@@ -115,7 +120,10 @@ section {
 }
 
 /*-----main-----*/
-.shop-text-1, .shop-text-1-2, .shop-text-2, .shop-text-3 {
+.shop-text-1,
+.shop-text-1-2,
+.shop-text-2,
+.shop-text-3 {
   letter-spacing: 0.1rem;
   margin: 1rem;
 }
@@ -138,7 +146,7 @@ section {
   position: absolute;
   top: 25%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
 .main-button {
   font-size: 1.3rem;
@@ -147,11 +155,11 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
 .seperator-box {
   width: 100%;
-  background-color: #23312B;
+  background-color: #23312b;
   height: 4.5rem;
   position: relative;
   margin-bottom: 5rem;
@@ -168,7 +176,7 @@ section {
   position: absolute;
   bottom: 0%;
   left: 3%;
-  color: #FFF;
+  color: #fff;
   font-size: 2.5rem;
   padding-bottom: 2rem;
 }
@@ -176,7 +184,7 @@ section {
   position: absolute;
   bottom: 0;
   left: 3%;
-  color: #FFF;
+  color: #fff;
   font-size: 1.875rem;
 }
 .content-box-images {
@@ -197,25 +205,26 @@ section {
   position: absolute;
   bottom: 0;
   left: 3%;
-  color: #FFF;
+  color: #fff;
   font-size: 1.875rem;
 }
 .shop-text-3 {
   position: absolute;
   bottom: 0%;
   left: 3%;
-  color: #FFF;
+  color: #fff;
   font-size: 1.25rem;
   padding-bottom: 2rem;
 }
 .sustainability-information {
-  background-color: #23312B;
+  background-color: #23312b;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  color: #FFF;
+  color: #fff;
   margin-bottom: 5rem;
 }
-.sustainability-information p, .sustainability-header {
+.sustainability-information p,
+.sustainability-header {
   margin-left: 5rem;
   margin-right: 5rem;
 }
@@ -250,7 +259,8 @@ section {
   .shop-text-3 {
     font-size: 1rem;
   }
-  .sustainability-information p, .sustainability-header {
+  .sustainability-information p,
+  .sustainability-header {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
   }
@@ -264,7 +274,6 @@ section {
     text-align: left;
   }
 }
-
 
 /*-----shop-----*/
 h1 {
@@ -293,14 +302,14 @@ h1 {
   height: auto;
 }
 .jacket-info-1 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   text-align: center;
   font-weight: 300;
   font-size: 1.5rem;
   color: #000;
 }
 .jacket-info-2 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   text-align: center;
   font-weight: 200;
   font-size: 1.2rem;
@@ -315,13 +324,13 @@ h1 {
   }
 }
 
-
 /*-----FridaRunner-----*/
-.gender, .price {
+.gender,
+.price {
   margin: 0;
 }
 .gender {
-  color: #23312B;
+  color: #23312b;
 }
 .price {
   font-weight: 300;
@@ -347,7 +356,7 @@ h1 {
 .size-range {
   transform: scale(1.8);
 }
-input[type='radio']:checked {
+input[type="radio"]:checked {
   accent-color: #000;
 }
 fieldset {
@@ -379,7 +388,9 @@ legend {
   padding: 0;
 }
 @media (max-width: 768px) {
-  .gender, .price, .fr-headers {
+  .gender,
+  .price,
+  .fr-headers {
     text-align: center;
   }
   .fridarunner-img-box {
@@ -393,7 +404,8 @@ legend {
   .fridarunner-box {
     display: block;
   }
-  .fridarunner-information, .material-information {
+  .fridarunner-information,
+  .material-information {
     margin: 1 auto;
     padding: 0 0.5rem;
   }
@@ -403,9 +415,9 @@ legend {
   }
 }
 
-
 /*-----cart-----*/
-.cart-border, .cart-border-subtotal {
+.cart-border,
+.cart-border-subtotal {
   display: flex;
   justify-content: space-between;
   border: solid #000;
@@ -413,10 +425,17 @@ legend {
   padding: 0.5rem;
   margin-bottom: 1rem;
 }
-.cart-jacket-box, .cart-info, .cart-qty, .cart-price, .cart-remove {
+.cart-jacket-box,
+.cart-info,
+.cart-qty,
+.cart-price,
+.cart-remove {
   width: 15%;
 }
-.cart-content, .cart-qty, .cart-price, .cart-remove {
+.cart-content,
+.cart-qty,
+.cart-price,
+.cart-remove {
   margin: 1.5rem 0 0 0;
 }
 .cart-content {
@@ -432,10 +451,11 @@ legend {
   padding: 0.2rem 1rem;
   border: none;
   background-color: #312329;
-  color: #FFF;
+  color: #fff;
   border-radius: 0.4rem;
 }
-.subtotal, .subtotal-price {
+.subtotal,
+.subtotal-price {
   font-size: 1.5rem;
   margin: 1rem 2rem;
   font-weight: 300;
@@ -446,7 +466,7 @@ legend {
   border-radius: 1rem;
 }
 .cart-form {
-  color: #FFF;
+  color: #fff;
   font-weight: 300;
   font-size: 1.3rem;
   padding: 2rem 2rem;
@@ -460,13 +480,18 @@ legend {
 }
 
 @media (max-width: 768px) {
-  .cart-border, .cart-border-subtotal {
+  .cart-border,
+  .cart-border-subtotal {
     display: block;
     align-items: center;
     text-align: center;
     margin: 0.5rem;
   }
-  .cart-jacket-box, .cart-info, .cart-qty, .cart-price, .cart-remove {
+  .cart-jacket-box,
+  .cart-info,
+  .cart-qty,
+  .cart-price,
+  .cart-remove {
     width: 100%;
   }
   .cart-form-container {
@@ -480,18 +505,16 @@ legend {
     border-radius: 0;
   }
   .cart-form {
-   display: block;
-   padding: 2rem 4rem;
+    display: block;
+    padding: 2rem 4rem;
   }
 }
-
 
 /*-----checkout-----*/
 .checkout-img {
   width: 100%;
   height: auto;
 }
-
 
 /*-----about-----*/
 .about-group-img {
@@ -518,19 +541,19 @@ legend {
     float: none;
     padding: 0;
     max-width: 100%;
-
   }
-  .about-info-1, .about-info-2 {
+  .about-info-1,
+  .about-info-2 {
     float: none;
     margin: 0 auto;
     max-width: 40ch;
     padding: 0rem 0.5rem 1rem 0.5rem;
   }
-  .about-header, .choose-title {
+  .about-header,
+  .choose-title {
     text-align: center;
   }
 }
-
 
 /*-----contact-----*/
 .contact-info-1 {
@@ -544,7 +567,7 @@ legend {
   border-radius: 1rem;
 }
 .contact-form {
-  color: #FFF;
+  color: #fff;
   font-weight: 300;
   font-size: 1.3rem;
   padding: 2rem 2rem;
@@ -582,11 +605,10 @@ input {
   }
 }
 
-
 /*-----footer-----*/
-footer { 
+footer {
   width: 100%;
-  background-color: #23312B;
+  background-color: #23312b;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -598,17 +620,17 @@ footer {
   flex-direction: column;
   padding-left: 0;
   margin-left: 1rem;
-  font-family: 'Oswald', sans-serif;
-  color: #FFF;
+  font-family: "Oswald", sans-serif;
+  color: #fff;
   font-weight: 300;
   font-size: 1.5rem;
 }
 .footer-nav a:hover {
   text-decoration: underline;
 }
-.footer-form{
-  font-family: 'Oswald', sans-serif;
-  color: #FFF;
+.footer-form {
+  font-family: "Oswald", sans-serif;
+  color: #fff;
   font-weight: 300;
   font-size: 1.2rem;
 }
@@ -623,8 +645,8 @@ footer {
   margin-top: 0.5rem;
 }
 .footer-follow {
-  font-family: 'Oswald', sans-serif;
-  color: #FFF;
+  font-family: "Oswald", sans-serif;
+  color: #fff;
   font-weight: 300;
   font-size: 1.5rem;
   width: 50%;
